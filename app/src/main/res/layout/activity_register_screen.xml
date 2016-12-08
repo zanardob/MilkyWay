@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg_login"
+    tools:context="com.astrocows.milkyway.RegisterScreen">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layoutIntro">
+
+        <EditText
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/passwordField"
+            android:singleLine="false"
+            android:background="?android:attr/actionModeBackground"
+            android:layout_height="50dp"
+            android:layout_width="275dp"
+            android:layout_below="@+id/emailField"
+            android:layout_alignLeft="@+id/emailField"
+            android:layout_alignStart="@+id/emailField"
+            android:layout_marginTop="22dp"
+            android:hint="Senha" />
+
+        <EditText
+            android:ems="10"
+            android:id="@+id/emailField"
+            android:singleLine="false"
+            android:selectAllOnFocus="false"
+            android:background="?android:attr/actionModeBackground"
+            android:height="50dp"
+            android:layout_width="275dp"
+            android:layout_height="50dp"
+            android:hint="E-mail"
+            android:layout_marginTop="38dp"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:inputType="textEmailAddress" />
+
+        <ImageView
+            android:layout_width="160dp"
+            app:srcCompat="@drawable/milky_cow_avatar"
+            android:id="@+id/imageView"
+            android:layout_height="160dp"
+            android:fadeScrollbars="false"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp" />
+
+        <Button
+            android:text="Entrar"
+            android:id="@+id/registerButton"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:elevation="10dp"
+            android:background="#E91E63"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="true"
+            android:visibility="visible"
+            android:layout_height="50dp"
+            android:backgroundTintMode="src_in"
+            android:layout_width="105dp"
+            android:textStyle="normal|bold"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="39dp" />
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "223121475122",
+    "firebase_url": "https://milky-way-cb63c.firebaseio.com",
+    "project_id": "milky-way-cb63c",
+    "storage_bucket": "milky-way-cb63c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:223121475122:android:ac7a9207480f45f2",
+        "android_client_info": {
+          "package_name": "com.astrocows.milkyway"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "223121475122-fq7f70jkklk11em75ef8mch747mf6f0u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBzIWKYcBKPlT8udsInIy_kiPSqdebak4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

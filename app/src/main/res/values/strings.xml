@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">Milky Way</string>
-
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-
-    <string name="action_settings">Settings</string>
+    <string name="minimum_password">Password too short, enter minimum 6 characters!</string>
+    <string name="auth_failed">Authentication failed, check your email and password or sign up</string>
+    <string name="invalid_email">Enter a valid e-mail!</string>
+    <string name="icorrect_password">Password is incorrect!</string>
+    <string name="icorrect_email">E-mail is incorrect!</string>
 </resources>
