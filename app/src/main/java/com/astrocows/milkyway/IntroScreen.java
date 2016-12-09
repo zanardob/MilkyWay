@@ -12,10 +12,6 @@ import android.view.animation.LinearInterpolator;
 import android.widget.Button;
 import android.widget.ImageView;
 
-/**
- * Created by Gustavo on 08/12/2016.
- */
-
 public class IntroScreen extends AppCompatActivity {
 
     @Override

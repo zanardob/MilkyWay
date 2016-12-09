@@ -5,7 +5,6 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
-import android.text.TextUtils;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
@@ -17,10 +16,6 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-
-/**
- * Created by lucas on 08/12/16.
- */
 
 public class RegisterScreen extends AppCompatActivity {
 
@@ -72,14 +67,11 @@ public class RegisterScreen extends AppCompatActivity {
                                     else
                                     {
                                         Toast.makeText(RegisterScreen.this, "Registration complete!", Toast.LENGTH_SHORT).show();
-
-                                        startActivity(new Intent(RegisterScreen.this, IntroScreen.class));
-                                        finish();
+                                        Intent intent = new Intent(RegisterScreen.this, LoginScreen.class);
+                                        startActivity(intent);
                                     }
                                 }
                             });
-
-
                 } else if (event.getAction() == MotionEvent.ACTION_UP) {
                     // Released
                     register.setBackgroundColor(Color.parseColor("#E91E63"));

@@ -7,10 +7,6 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
-/**
- * Created by Gustavo on 08/12/2016.
- */
-
 public class MarquesScreen extends AppCompatActivity {
 
     @Override

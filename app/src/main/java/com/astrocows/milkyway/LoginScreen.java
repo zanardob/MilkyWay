@@ -5,7 +5,6 @@ import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.TextUtils;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
@@ -69,9 +68,8 @@ public class LoginScreen extends AppCompatActivity {
                                     else
                                     {
                                         Toast.makeText(LoginScreen.this, "Authentication complete!", Toast.LENGTH_SHORT).show();
-
-                                        startActivity(new Intent(LoginScreen.this, IntroScreen.class));
-                                        finish();
+                                        Intent intent = new Intent(LoginScreen.this, MainActivity.class);
+                                        startActivity(intent);
                                     }
                                 }
                             });
@@ -79,6 +77,24 @@ public class LoginScreen extends AppCompatActivity {
                 } else if (event.getAction() == MotionEvent.ACTION_UP) {
                     // Released
                     login.setBackgroundColor(Color.parseColor("#E91E63"));
+                }
+                return true;
+            }
+        });
+
+        final Button forgot = (Button) findViewById(R.id.forgotPassButton);
+
+        forgot.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                    // Pressed
+                    forgot.setBackgroundColor(Color.parseColor("#F8BBD0"));
+                    Intent intent = new Intent(LoginScreen.this, ForgotPasswordScreen.class);
+                    startActivity(intent);
+                } else if (event.getAction() == MotionEvent.ACTION_UP) {
+                    // Released
+                    forgot.setBackgroundColor(Color.parseColor("#E91E63"));
                 }
                 return true;
             }

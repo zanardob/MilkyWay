@@ -5,4 +5,13 @@
     <string name="invalid_email">Enter a valid e-mail!</string>
     <string name="icorrect_password">Password is incorrect!</string>
     <string name="icorrect_email">E-mail is incorrect!</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="permission_rationale_location">Can you give us your location?</string>
+    <string name="permission_required_toast">We need your location!</string>
+    <string name="location_permission_denied">Location denied!</string>
+
+    <string name="action_settings">Settings</string>
 </resources>
